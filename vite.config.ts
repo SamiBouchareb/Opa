@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   base: '/Opa/',
   plugins: [react()],
+  build: {
+    outDir: 'dist'
+  },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
